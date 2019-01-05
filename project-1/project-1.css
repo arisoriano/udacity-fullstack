@@ -1,0 +1,16 @@
+/* Change movie title text to uppercase */
+h2 {
+	text-transform: uppercase;
+}
+
+/* Change lightbox to transparent black */
+.modal {
+	background-color: rgba(0,0,0,0.9) !important;
+}
+
+/* Create white text on a black background on hover */
+[data-target="#trailer"]:hover {
+	background-color: #000 !important;
+	color: #fff !important;
+}
+

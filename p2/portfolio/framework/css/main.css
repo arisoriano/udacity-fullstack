@@ -1,0 +1,215 @@
+/* Default styling =============================================== */
+/* Base styling */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+	padding: 1rem 0 1rem 0;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 3rem;
+	margin: 0;
+}
+
+h2 {
+	margin-top: 2rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin: 0;
+}
+
+.holdImg + h3 {
+	margin-bottom: 2rem;
+}
+
+main {
+	text-align: center;
+}
+
+/* Layout styling */
+.row {
+	width: auto;
+	height: 100%;
+}
+
+.col-2 {
+	flex: 50%;
+}
+
+.col-4 {
+	flex: 30%;
+}
+
+.flexHeader {
+	display: block;
+}
+
+.flexGrid {
+	display: flex;
+	flex-flow: column wrap;
+	list-style: none;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Module styling */
+.logo {
+	width: 75%;
+}
+
+.styleHr {
+	border-top: 0.25rem dotted #8c8b8b;
+	border-bottom: 0.25rem dotted #fff;
+}
+
+.hero {
+	width: 100%;
+	height: 65vh;
+	object-fit: cover;
+}
+
+.img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.workText {
+	text-transform: uppercase;
+}
+
+.workP {
+	padding: 1rem 2rem 2rem 2rem;
+}
+
+/* Media queries ================================================= */
+/* Breakpoints: 500px 760px 960px */
+/* miniBreakpoints: 420px, width 375px + min-height 812px;
+
+/* miniBreakpoint: 420px; **************************************** */
+@media screen and (min-width: 420px) and (orientation: landscape) {
+	/* Base styling media queries */
+	/* Layout styling media queries */
+	/* Module styling media queries */
+	.img {
+		width: 400px;
+		height: 400px;
+	}
+} /* min-width: 420px */
+
+/* miniBreakpoint: iPhone X (width 375 + height 812px) */
+@media screen and (width: 375px) and (min-height: 812px) {
+	.hero {
+		height: 45vh;
+	}
+} /* iPhone X (width 375 + min-height 812px) */
+
+
+/* Breakpoint: 500px ============================================= */
+@media screen and (min-width: 500px) and (orientation: landscape) {
+	/* Base style media querie */
+	header {
+		padding: 0 1rem 0 1rem;
+	}
+
+	/* Layout styling media queries */
+	.flexHeader {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+	}
+
+	.holdLogo {
+		text-align: left;
+		align-content: center;
+		flex: 8.3%;
+	}
+
+	.textHeader {
+		text-align: right;
+		flex: 91.7%;
+	}
+
+	/* Module styling media queries */
+	.logo {
+		width: 100%;
+		height: 100%;
+	}
+
+	.hero {
+		height: 100vh;
+	}
+
+	.img {
+		width: 80vw;
+		height: 80vh;
+	}
+} /* min-width: 500px; */
+
+
+/* Breakpoint: 760px ============================================= */
+@media screen and (min-width: 760px) and (orientation: landscape) {
+	/* Base styling media queries */
+	header {
+		text-align: right;
+	}
+
+	h2 {
+		text-align: left;
+	}
+
+	/* Layout styling media queries */
+	.flexGrid {
+		flex-flow: row wrap;	
+	}
+
+	.flexGrid div:first-of-type {
+		margin-left: -0.75rem;
+	}
+
+	.col-4 {
+		flex: 1 0 25%;
+		padding: 0 0 0.75rem 1.25rem;
+		margin: 0 0 0.75rem 0.75rem;
+	}
+
+	.leftIndent {
+		margin-left: 1rem;
+	}
+
+	.workP {
+		text-align: left;
+		margin: 0 0 2rem 1rem;
+		padding: 0;
+	}
+
+	/* Module styling media queries */
+	.img {
+		width: 100%;
+		height: 40vh;
+	}
+} /* min-width: 760px; */
+
+
+/* Breakpoint: 960px ============================================= */
+@media screen and (min-width: 960px) and (orientation: landscape) {
+	/* Base styling media queries */
+	header, main {
+		width: 960px;
+		margin: auto;
+	}
+}
